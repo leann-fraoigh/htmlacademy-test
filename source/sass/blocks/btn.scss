@@ -1,0 +1,56 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 6px 10px;
+
+  color: $color-carrot-orange;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+
+  background-color: $color-default-white;
+  border: 1px solid $color-carrot-orange;
+  border-radius: 6px;
+
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: color $default-transition-settings, border $default-transition-settings, background-color $default-transition-settings, background-color $default-transition-settings, filter $default-transition-settings;
+
+  cursor: pointer;
+
+  svg {
+    fill: $color-carrot-orange;
+    stroke: $color-transparent;
+
+    transition: fill $default-transition-settings, stroke $default-transition-settings;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:not(.hack-selector):hover,
+    &:not(.hack-selector):focus {
+      outline: none;
+      filter: hue-rotate(130deg);
+    }
+  }
+}
+
+
+.btn--rss {
+  position: relative;
+
+  color: $color-default-white;
+  padding: 1px 12px 0 0;
+  border-radius: 16px;
+  box-shadow: 0px 0px 0px 1px $color-carrot-orange;
+  background-color: $color-carrot-orange;
+
+  svg {
+    margin-right: 8px;
+    fill: $color-carrot-orange;
+  }
+}

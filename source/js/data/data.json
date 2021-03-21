@@ -1,0 +1,74 @@
+{
+  "NEWS": [
+      {
+          "author": "Евгений Шкляр",
+          "title": "Чем отличаются HTTP-методы GET и POST",
+          "publishedAt": "2021-03-09T18:25:43.511+03:00",
+          "url": "https://htmlacademy.ru/blog/boost/tools/time-trackers",
+          "isNew": "false"
+      },
+      {
+          "author": "Алёна Кудлаева",
+          "title": "Как измерить время написания кода",
+          "publishedAt": "2021-03-05T14:15:43.511+03:00",
+          "url": "https://htmlacademy.ru/blog/boost/tools/time-trackers",
+          "isNew": "true"
+      },
+      {
+        "author": "Виталий Зюзин",
+        "title": "Как учиться самостоятельно и не сдаться на полпути",
+        "publishedAt": "2021-03-02T10:12:43.511+03:00",
+        "url": "https://htmlacademy.ru/blog/academy/learning/selfmade",
+        "isNew": "true"
+      },
+      {
+        "author": "Евгений Шкляр",
+        "title": "Что такое семантическая вёрстка и зачем она нужна",
+        "publishedAt": "2021-02-25T00:25:43.511+03:00",
+        "url": "https://htmlacademy.ru/blog/boost/frontend/semantics",
+        "isNew": "true"
+      },
+      {
+        "author": "Валерия Зеленая",
+        "title": "Работа с Git через консоль",
+        "publishedAt": "2021-02-18T03:25:43.511+03:00",
+        "url": "https://htmlacademy.ru/blog/boost/frontend/git-console",
+        "isNew": "true"
+      },
+      {
+        "author": "Евгений Шкляр",
+        "title": "Чем отличаются HTTP-методы GET и POST",
+        "publishedAt": "2021-03-09T18:25:43.511+03:00",
+        "url": "https://htmlacademy.ru/blog/boost/tools/time-trackers",
+        "isNew": "false"
+      },
+      {
+          "author": "Алёна Кудлаева",
+          "title": "Как измерить время написания кода",
+          "publishedAt": "2021-03-05T14:15:43.511+03:00",
+          "url": "https://htmlacademy.ru/blog/boost/tools/time-trackers",
+          "isNew": "true"
+      },
+      {
+        "author": "Виталий Зюзин",
+        "title": "Как учиться самостоятельно и не сдаться на полпути",
+        "publishedAt": "2021-03-02T10:12:43.511+03:00",
+        "url": "https://htmlacademy.ru/blog/academy/learning/selfmade",
+        "isNew": "true"
+      },
+      {
+        "author": "Евгений Шкляр",
+        "title": "Что такое семантическая вёрстка и зачем она нужна",
+        "publishedAt": "2021-02-25T00:25:43.511+03:00",
+        "url": "https://htmlacademy.ru/blog/boost/frontend/semantics",
+        "isNew": "true"
+      },
+      {
+        "author": "Валерия Зеленая",
+        "title": "Работа с Git через консоль",
+        "publishedAt": "2021-02-18T03:25:43.511+03:00",
+        "url": "https://htmlacademy.ru/blog/boost/frontend/git-console",
+        "isNew": "true"
+      }
+  ]
+}

@@ -1,0 +1,147 @@
+.news-widget {
+  position: relative;
+  position: fixed;
+  bottom: 0;
+  right: calc((100vw - 1920px) / 2 + 32px);
+
+  width: 400px;
+  height: 500px;
+  box-sizing: border-box;
+  max-height: 100vh;
+  min-height: 300px;
+  max-width: 100vw;
+  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  font-family: $font-family--montserrat;
+
+  @include viewport--xl {
+    right: 0;
+  }
+
+  @include viewport--lg {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  @include viewport--md {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  @include viewport--sm {
+    width: 320px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.news-widget__content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+
+  background-color: $color-default-white;
+  border: 1px solid $color-whisper;
+  border-radius: 5px;
+
+  transform: scale(1.1);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity $modal-transition-settings,
+    transform $modal-transition-settings,
+    visibility $modal-transition-settings;
+
+  &--active {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.news-widget__header {
+  position: sticky;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  @include viewport--sm {
+    margin-bottom: 10px;
+  }
+}
+
+.news-widget__link-read-all {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.news-widget__toggle {
+  position: absolute;
+  bottom: 20px;
+  right: 32px;
+
+  pointer-events: unset;
+
+  @include viewport--md {
+    right: 24px;
+  }
+
+  @include viewport--sm {
+    right: 16px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: 5px;
+    width: 2px;
+    height: 16px;
+
+    background-color: $color-default-white;
+
+    opacity: 0;
+
+    transition: opacity $default-transition-settings;
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &[aria-pressed="true"] {
+    span {
+      opacity: 0;
+    }
+
+    &::after,
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--not-active {
+    display: none;
+  }
+}
+
